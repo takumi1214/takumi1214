@@ -1,0 +1,605 @@
+
+
+
+
+body{
+    font-family: YuGothic;
+   }
+
+.wrap {
+	overflow: hidden;
+}
+
+
+/*ヘッダー部分*/
+.header{
+    top:0;
+    z-index: 9999;
+    width: 100%;
+    height:70px
+}
+
+.header-inner{
+max-width: 1080px;
+margin-left: auto;
+margin-right:auto;
+display: flex;
+
+align-items: center;
+justify-content: space-between;
+height:100%;
+}
+
+.header-left{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.header-right{
+    
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    height:33px;
+    width: 130px;
+}
+
+
+.btn-recruit{
+    width: 151px;
+    height:48px;
+    line-height: 48px;
+    color:#333333;
+    font-weight: bold;
+    text-decoration: none;
+
+    background: #FFE000;
+    border-radius: 24px;
+    display:block;
+    text-align: center;
+    box-shadow: 3px 3px 10px #00000029;
+    opacity: 1;
+}
+
+
+
+
+/*ヘディング　日本会社を導く～の部分*/
+
+.heading-inner{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top:80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+.heading-copy{
+text-align: left;
+}
+
+.heading h2{
+    font-size: 36px;
+    margin-bottom: 34px;
+    font-weight: bold;
+}
+
+.heading p{
+    font-size:16px;
+    line-height:27px;
+    margin-bottom:40px ;
+}
+
+.heading-btn{
+    display:flex;
+}
+
+.heading img{
+    width: 560px;
+    height:448px;
+    text-align: right;
+    }
+    
+
+.btn-info{
+    width: 223px;
+    height:48px;
+    line-height: 48px;
+    font-size: 18px;
+    color:#109954;
+    font-weight: bold;
+    text-decoration: none;
+
+    background: #FFFFFF;
+    border-radius: 32px;
+    display:block;
+    text-align: center;
+    box-shadow: 3px 3px 10px #00000029;
+    opacity: 1;
+}
+
+/*サイト内の緑色のボタンに使ったCSS*/
+
+.btn {
+    width: 166px;
+    height:48px;
+    line-height: 48px;
+    font-size: 18px;
+    color:#FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+
+    background: #109954;
+    border-radius: 32px;
+    display:block;
+    text-align: center;
+    box-shadow: 3px 3px 10px #00000029;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*service about newsの横線の部分*/
+
+
+    .border{
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 120px;
+      }
+
+    .border:before,.border:after {
+        border-top: 4px solid #109954;
+        content:"" ;
+        flex-grow: 0; 
+        width: 200px; 
+    }
+
+    .border:before {
+        margin-right: 5rem;
+        }
+    .border:after {
+        margin-left: 5rem;
+        }
+
+
+    /*SERVICEの部分*/
+           .service{
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .intro-inner{
+            display: flex;
+        justify-content: space-between;
+        margin-top: 109px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .intro-img{
+           text-align: center;
+        }
+
+        .intro-img img{
+            width:200px;
+            height:200px;
+        }
+
+        .intro-body{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+/*ABOUTの部分*/
+        .about{
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .desc-inner{
+            
+            
+            padding-top: 100px;
+        }
+
+        .desc-box{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .desc-copy p{
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 27px;
+            font-weight: normal;
+            color:#333333;
+        }
+
+        .desc-copy h3{
+            font-size: 32px;
+            color:#109954;
+            margin-bottom: 30px;
+
+        }
+
+        .desc-img img{
+            width: 450px;
+            height: 278px;
+            margin-left:40px ;
+            box-shadow: 0px 11px 20px#00000029;
+
+        }
+
+        .desc-img-secondary img{
+            width: 450px;
+            height: 278px;
+            margin-right: 40px;
+            box-shadow: 0px 11px 20px#00000029;
+
+        }
+
+
+
+
+/*NEWSの部分*/
+
+        .news-ttl{
+            margin-bottom: 101px;
+
+        }
+
+
+        .news-title{
+            font-size: 36px;
+        }
+
+        .news-box {
+            position: relative;
+            z-index: 1; 
+            display: flex;
+            justify-content: center;
+        align-items: center;
+        border-top: 1px solid #D6D6D6;
+       
+        }
+        .news-box a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-indent:-999px;
+            z-index: 2;
+        }
+
+        .news-inner{
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 1px solid #D6D6D6;
+        }
+
+        .news-box img{
+            width: 300px;
+            height:168px;
+            margin-top: 18px;
+        }
+
+
+        .date{
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .title{
+            margin-bottom: 20px;
+        }
+
+        .category{
+            font-size: 14px;
+            border: solid 2px #109954;
+            display: inline-block;
+            color: #109954;
+            border-radius: 13px;
+            margin-left: 28px;
+            text-align: center;
+            width: 101px;
+            line-height: 26px;
+        }
+
+        .news-btn{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            display:flex;
+            justify-content: center;
+        }
+
+
+        /*footerの部分*/
+
+        .footer{
+            background-color: #E8E8E8;
+            height:135px;
+            text-align: center;
+            padding-bottom: 14px;
+        }
+
+        .footer-inner{
+            max-width: 1080px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 25px;
+            padding-bottom: 12px;
+        }
+
+        .footer-inner img{
+            
+            width: 70px;
+            height:70px;
+        }
+
+        .footer-inner ul{
+           display: flex;
+            list-style: none;
+            font-size: 14px;
+        }
+
+       li+li{
+           border-left: 1px solid #333;
+           margin-left: 18px;
+           padding-left: 18px;
+       }
+
+       .footer p{
+           color:#333333;
+           font-size: 14px;
+       }
+
+
+        /*画面サイズ７６８ｐｘ以上に使った改行用CSS*/
+
+     @media screen and (min-width:768px){
+        .br-pc{
+        display: block;
+         }
+         .br-sp{
+            display:none;
+        }
+        }
+
+    /*画面サイズ７６８ｐｘ以下のCSS*/
+
+
+        @media screen and (max-width:768px){
+
+            /*７６８ｐｘ以下のヘッダーの部分*/
+            
+            .header{
+                margin-bottom: 10px;
+                
+            }
+
+            .header-inner{
+                margin: 0 15px;
+                max-width: 345px;
+                margin-left: auto;
+                margin-right: auto;
+                        }
+            
+            .btn-info{
+                margin-top: 15px;
+            }
+        
+            .logo{
+                width:110px;
+                height:28px;
+            }
+
+            /*７６８ｐｘ以下のヘディングの部分*/
+        
+            .heading img{
+                width:345px;
+                height:276px;
+                margin-bottom: 10px;
+            }
+        
+            .heading-inner{
+               text-align: center;
+                flex-direction: column;
+                padding-top: 10px;
+            }
+        
+            .heading-copy h2{
+                font-size: 28px;
+            }
+
+           
+        
+            .heading-btn{
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+            
+           
+
+
+            /*ヘディング、ABOUTに使った順番指定するCSS*/
+            .order1{
+                order: 1;
+            }
+        
+            .order2{
+                order:2;
+            }
+
+            /*画面サイズ７６８ｐｘ以下に使った改行用CSS*/
+            .br-sp{
+                display: block;
+            }
+            .br-pc{
+                display:none;
+            }
+
+            
+        
+
+         /*７６８ｐｘ以下のservice about newsの横線の部分*/
+        .border{
+            max-width: 345px;
+            margin :0 auto;
+            font-size: 28px;
+            margin-bottom: 80px;
+            margin-top: 100px;
+        }
+
+        .border:before,.border:after {
+            border-top: 4px solid #109954;
+            content:"" ;
+            flex-grow: 0; 
+            width: 93px; 
+        }
+    
+        .border:before {
+            margin-right: 15px;
+            }
+        .border:after {
+            margin-left: 15px;
+            }
+
+
+         /*７６８ｐｘ以下のSERVICEの部分*/
+        .intro-inner{
+            display:flex ;
+  flex-direction: column;
+
+        }
+
+       
+        /*７６８ｐｘ以下のABOUTの部分*/
+        .desc-box{
+            max-width: 375px;
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: column;
+            margin-bottom: 0px;
+        }
+
+        .desc-img img{
+        width:345px;
+        height: 213px;
+        margin: 0 0 50px 0;
+        }
+
+        .desc-img-secondary{
+            
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+        
+        .desc-copy p {
+                   }
+
+        .desc-copy a{
+            align-items: center;
+        }
+
+         .desc-inner{
+            padding-top: 0px;
+        }
+
+        .desc-more{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+
+        /*７６８以下のNEWSの部分*/
+
+
+        .news-box{
+            display: flex;
+  flex-direction: column;
+  max-width: 349px;
+    margin-left: auto;
+    margin-right: auto;
+        }
+
+        .news-copy{
+            margin-bottom: 18px;
+            margin-top: 18px;
+        }
+
+        .title{
+            margin-top: 22px;
+            margin-bottom: 24px;
+        }
+
+
+        /*７６８ｐｘ以下のフッターの部分*/
+
+
+        .footer{
+            height:289px;
+           
+                 }
+
+        .footer-inner {
+            display: flex;
+            flex-direction: column;
+            max-width: 168px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer-inner img{
+            margin-bottom: 23px;
+        }
+
+        .footer-inner ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-inner li{
+            margin-bottom: 12px;
+        }
+
+        li+li{
+            border:none;
+            margin-left: 0px;
+            padding-left: 0px;        
+        }
+
+        .footer p{
+            margin-top: 28px;
+        }
+    }
