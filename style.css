@@ -1,9 +1,5 @@
-
-
-
-
 body{
-    font-family: YuGothic;
+    font-family: 'YuGothic',sans-serif;
    }
 
 .wrap {
@@ -12,7 +8,7 @@ body{
 
 
 /*ヘッダー部分*/
-.header{
+header{
     top:0;
     z-index: 9999;
     width: 100%;
@@ -85,13 +81,16 @@ text-align: left;
 }
 
 .heading h2{
-    font-size: 36px;
+    font-size: 2.81vw;
     margin-bottom: 34px;
     font-weight: bold;
+    line-height: 1.5;
 }
 
 .heading p{
-    font-size:16px;
+    font-size:1.25vw;
+    width:400px;
+    height: 43px;
     line-height:27px;
     margin-bottom:40px ;
 }
@@ -101,7 +100,7 @@ text-align: left;
 }
 
 .heading img{
-    width: 560px;
+    width: 43.75vw;
     height:448px;
     text-align: right;
     }
@@ -122,6 +121,7 @@ text-align: left;
     text-align: center;
     box-shadow: 3px 3px 10px #00000029;
     opacity: 1;
+    border: solid 2px #109954;
 }
 
 /*サイト内の緑色のボタンに使ったCSS*/
@@ -220,6 +220,10 @@ text-align: left;
         }
 
         .desc-box{
+            max-width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 27px;
             display: flex;
             justify-content:center;
             align-items: center;
@@ -227,7 +231,8 @@ text-align: left;
         }
 
         .desc-copy p{
-            font-size: 16px;
+            width: 450px;
+            font-size: 1.25vw;
             margin-bottom: 30px;
             line-height: 27px;
             font-weight: normal;
@@ -235,23 +240,23 @@ text-align: left;
         }
 
         .desc-copy h3{
-            font-size: 32px;
+            font-size: 2.5vw;
             color:#109954;
             margin-bottom: 30px;
 
         }
 
         .desc-img img{
-            width: 450px;
-            height: 278px;
+            width: 35.1vw; 
+            height: 21.7vw;
             margin-left:40px ;
             box-shadow: 0px 11px 20px#00000029;
 
         }
 
         .desc-img-secondary img{
-            width: 450px;
-            height: 278px;
+            width: 35.1vw; 
+            height: 21.7vw;
             margin-right: 40px;
             box-shadow: 0px 11px 20px#00000029;
 
@@ -337,7 +342,7 @@ text-align: left;
 
         /*footerの部分*/
 
-        .footer{
+        footer{
             background-color: #E8E8E8;
             height:135px;
             text-align: center;
@@ -353,7 +358,6 @@ text-align: left;
             align-items: center;
             justify-content: space-between;
             padding-top: 25px;
-            padding-bottom: 12px;
         }
 
         .footer-inner img{
@@ -368,21 +372,40 @@ text-align: left;
             font-size: 14px;
         }
 
+        .footer-inner a{
+            text-decoration: none;
+            color:#333333;
+        }
+
        li+li{
            border-left: 1px solid #333;
            margin-left: 18px;
            padding-left: 18px;
        }
 
-       .footer p{
+       footer p{
            color:#333333;
            font-size: 14px;
        }
 
+        /*画面サイズ1079px以上の余白用のCSS*/
 
-        /*画面サイズ７６８ｐｘ以上に使った改行用CSS*/
+       @media screen and (max-width:1079px){
 
-     @media screen and (min-width:768px){
+        .wrap-secondary{
+           padding-left: 15px;
+           padding-right: 15px;
+        }
+
+        .footer-inner{
+           padding-left: 15px;
+           padding-right: 15px;
+        }
+       }
+
+        /*画面サイズ７６7ｐｘ以上に使った改行用CSS*/
+
+     @media screen and (min-width:767px){
         .br-pc{
         display: block;
          }
@@ -391,14 +414,14 @@ text-align: left;
         }
         }
 
-    /*画面サイズ７６８ｐｘ以下のCSS*/
+    /*画面サイズ７６7ｐｘ以下のCSS*/
 
 
-        @media screen and (max-width:768px){
+        @media screen and (max-width:767px){
 
-            /*７６８ｐｘ以下のヘッダーの部分*/
+            /*７６7ｐｘ以下のヘッダーの部分*/
             
-            .header{
+            header{
                 margin-bottom: 10px;
                 
             }
@@ -419,7 +442,7 @@ text-align: left;
                 height:28px;
             }
 
-            /*７６８ｐｘ以下のヘディングの部分*/
+            /*７６7ｐｘ以下のヘディングの部分*/
         
             .heading img{
                 width:345px;
@@ -428,16 +451,30 @@ text-align: left;
             }
         
             .heading-inner{
+                max-width: 345px;
                text-align: center;
                 flex-direction: column;
                 padding-top: 10px;
             }
+
+            .heading-copy{
+                max-width: 345px;
+                margin-left: auto;
+                margin-right: auto;
+            }
         
             .heading-copy h2{
                 font-size: 28px;
+                text-align: center;
+                margin-bottom: 22px;
             }
 
-           
+           .heading-copy p{
+               max-width: 345px;
+               font-size: 16px;
+               text-align: center;
+              padding-bottom: 20px;
+           }
         
             .heading-btn{
                 flex-direction: column;
@@ -517,12 +554,17 @@ text-align: left;
         }
 
         .desc-img-secondary{
-            
             margin-top: 70px;
-            margin-bottom: 50px;
+        }
+
+        .desc-copy h3{
+            font-size: 4.17vw;
         }
         
         .desc-copy p {
+            width: 345px;
+            font-size: 2.08vw;
+
                    }
 
         .desc-copy a{
@@ -542,8 +584,11 @@ text-align: left;
         
 
 
-        /*７６８以下のNEWSの部分*/
+        /*７６7以下のNEWSの部分*/
 
+        .news-inner{
+            max-width: 349px;
+        }
 
         .news-box{
             display: flex;
@@ -567,7 +612,7 @@ text-align: left;
         /*７６８ｐｘ以下のフッターの部分*/
 
 
-        .footer{
+        footer{
             height:289px;
            
                  }
@@ -599,7 +644,39 @@ text-align: left;
             padding-left: 0px;        
         }
 
-        .footer p{
+        footer p{
             margin-top: 28px;
         }
     }
+
+     /*画面サイズ３２０ｐｘ以下に使ったCSS*/
+
+    @media screen and (max-width:320px){
+
+        .wrap-secondary{
+           padding-left: 4.68vw;
+           padding-right: 4.68vw;
+        }
+
+      
+
+        .heading-inner img{
+            width:91vw;
+
+        }
+        
+        .heading p{
+           width:290px;
+           margin-left: auto;
+           margin-right: auto;
+        }
+        
+
+        .desc-box img{
+            width:91vw;
+        }
+        
+       }
+
+
+
