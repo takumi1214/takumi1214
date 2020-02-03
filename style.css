@@ -558,12 +558,12 @@ text-align: left;
         }
 
         .desc-copy h3{
-            font-size: 4.17vw;
+            font-size: 36px;
         }
         
         .desc-copy p {
             width: 345px;
-            font-size: 2.08vw;
+            font-size: 16px;
 
                    }
 
@@ -674,6 +674,12 @@ text-align: left;
 
         .desc-box img{
             width:91vw;
+        }
+	    
+	.desc-copy p {
+            width: 290px;
+            margin-left: auto;
+           margin-right: auto;
         }
         
        }
