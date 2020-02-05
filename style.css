@@ -69,10 +69,9 @@ height:100%;
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-
     padding-top:80px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
       }
 
@@ -81,14 +80,14 @@ text-align: left;
 }
 
 .heading h2{
-    font-size: 2.81vw;
+    font-size: 36px;
     margin-bottom: 34px;
     font-weight: bold;
     line-height: 1.5;
 }
 
 .heading p{
-    font-size:1.25vw;
+    font-size:  16px;;
     width:400px;
     height: 43px;
     line-height:27px;
@@ -100,7 +99,7 @@ text-align: left;
 }
 
 .heading img{
-    width: 43.75vw;
+    width: 560px;
     height:448px;
     text-align: right;
     }
@@ -178,7 +177,7 @@ text-align: left;
 
 
     /*SERVICEの部分*/
-           .service{
+           .border-service{
             font-size: 36px;
             font-weight: bold;
         }
@@ -208,7 +207,7 @@ text-align: left;
         }
 
 /*ABOUTの部分*/
-        .about{
+        .border-about{
             font-size: 36px;
             font-weight: bold;
         }
@@ -225,38 +224,44 @@ text-align: left;
             margin-right: auto;
             line-height: 27px;
             display: flex;
-            justify-content:center;
+            justify-content:space-between;
             align-items: center;
             margin-bottom: 100px;
         }
 
         .desc-copy p{
             width: 450px;
-            font-size: 1.25vw;
+            font-size: 16px;
             margin-bottom: 30px;
             line-height: 27px;
             font-weight: normal;
             color:#333333;
         }
 
-        .desc-copy h3{
-            font-size: 2.5vw;
+        .desc-copy-secondary p{
+            width: 450px;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 27px;
+            font-weight: normal;
+            color:#333333;
+        }
+
+        .desc-copy-secondary h3{
+            font-size: 32px;
             color:#109954;
             margin-bottom: 30px;
 
         }
 
         .desc-img img{
-            width: 35.1vw; 
-            height: 21.7vw;
-            margin-left:40px ;
+           width: 450px;
             box-shadow: 0px 11px 20px#00000029;
 
         }
 
         .desc-img-secondary img{
-            width: 35.1vw; 
-            height: 21.7vw;
+            width: 450px;
             margin-right: 40px;
             box-shadow: 0px 11px 20px#00000029;
 
@@ -318,6 +323,11 @@ text-align: left;
 
         .title{
             margin-bottom: 20px;
+            line-height: 27px;
+        }
+
+        .text{
+            line-height: 27px;
         }
 
         .category{
@@ -346,7 +356,6 @@ text-align: left;
             background-color: #E8E8E8;
             height:135px;
             text-align: center;
-            padding-bottom: 14px;
         }
 
         .footer-inner{
@@ -388,20 +397,119 @@ text-align: left;
            font-size: 14px;
        }
 
-        /*画面サイズ1079px以上の余白用のCSS*/
+        /*画面サイズ1079px以下の余白用のCSS*/
 
-       @media screen and (max-width:1079px){
+       @media screen and (min-width:768px)and (max-width:1079px){
 
         .wrap-secondary{
            padding-left: 15px;
            padding-right: 15px;
         }
 
+        .br-pc{
+            display:none;
+        }
+
+
+
+        .heading img{
+            width:100%;
+            height:auto;
+        }
+
+        .mv-img{
+            width: 50%;
+        }
+
+        .heading-copy{
+            width: 50%;;
+        }
+
+       
+
+        .heading-copy p{
+            width: 100%;
+            height: auto;
+        }
+
+        .contact{
+            width: 100%;
+        }
+
+        .btn-info{
+            width:100%;
+        }
+        
+
+         /*画面サイズ1079px以下のABOUTのCSS*/
+
+        
+
+        .desc-img img{
+            width: 100%;
+            
+        }
+
+        .desc-img-secondary img{
+            width:100%;
+            height: auto;
+        }
+
+        .desc-img{
+            width:50%;
+        }
+
+        .desc-img-secondary{
+            width: 50%;
+        }
+
+        .desc-copy{
+            width:50%;
+            margin-right: 40px;
+        }
+
+        .desc-copy-secondary{
+            width:50%;
+            margin-left: 40px;
+        }
+
+        .desc-copy p{
+            width: 100%;
+            height: auto;
+        }
+
+        .desc-copy-secondary p{
+            width:100%;
+            height:auto;
+        }
+
+
+         /*画面サイズ1079px以下のNEWSのCSS*/
+
+
+        .news-box img{
+            width:20%;
+            height: auto;
+        }
+
+        .news-copy{
+            width: 80%;
+            height: auto;
+        }
+
+       
+
         .footer-inner{
            padding-left: 15px;
            padding-right: 15px;
         }
+
+        
        }
+
+      
+
+
 
         /*画面サイズ７６7ｐｘ以上に使った改行用CSS*/
 
@@ -413,6 +521,8 @@ text-align: left;
             display:none;
         }
         }
+
+      
 
     /*画面サイズ７６7ｐｘ以下のCSS*/
 
@@ -538,9 +648,9 @@ text-align: left;
         }
 
        
-        /*７６８ｐｘ以下のABOUTの部分*/
+        /*７６7ｐｘ以下のABOUTの部分*/
         .desc-box{
-            max-width: 375px;
+            max-width: 345px;
             margin-left: auto;
             margin-right: auto;
             flex-direction: column;
@@ -548,13 +658,23 @@ text-align: left;
         }
 
         .desc-img img{
-        width:345px;
-        height: 213px;
+        width:100%;
+        height: auto;
         margin: 0 0 50px 0;
         }
 
+        .desc-img-secondary img{
+            width:100%;
+            height: auto;
+            margin: 0 0 50px 0;
+            }
+
         .desc-img-secondary{
             margin-top: 70px;
+        }
+
+        .desc-copy{
+            margin-right: 0px;
         }
 
         .desc-copy h3{
@@ -562,10 +682,21 @@ text-align: left;
         }
         
         .desc-copy p {
-            width: 345px;
+            width: 100%;
             font-size: 16px;
-
                    }
+
+        .desc-copy-secondary{
+            margin-left: 0px;
+        }
+
+        .desc-copy-secondary h3{
+            width:100%;
+        }
+
+        .desc-copy-secondary p{
+            width:100%;
+        }
 
         .desc-copy a{
             align-items: center;
@@ -675,14 +806,13 @@ text-align: left;
         .desc-box img{
             width:91vw;
         }
-	    
-	.desc-copy p {
+
+        .desc-copy p {
             width: 290px;
             margin-left: auto;
            margin-right: auto;
         }
+
+        
         
        }
-
-
-
