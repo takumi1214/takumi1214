@@ -81,13 +81,14 @@ text-align: left;
 
 .heading h2{
     font-size: 36px;
+    width: 504px;
     margin-bottom: 34px;
     font-weight: bold;
     line-height: 1.5;
 }
 
 .heading p{
-    font-size:  16px;;
+    font-size:  16px;
     width:400px;
     height: 43px;
     line-height:27px;
@@ -335,7 +336,7 @@ text-align: left;
             border: solid 2px #109954;
             display: inline-block;
             color: #109954;
-            border-radius: 13px;
+            border-radius: 20px;
             margin-left: 28px;
             text-align: center;
             width: 101px;
@@ -412,10 +413,7 @@ text-align: left;
 
 
 
-        .heading img{
-            width:100%;
-            height:auto;
-        }
+       
 
         .mv-img{
             width: 50%;
@@ -425,20 +423,23 @@ text-align: left;
             width: 50%;;
         }
 
-       
+        .mv-img img{
+            width:100%;
+            height:auto;
+        }
 
         .heading-copy p{
             width: 100%;
             height: auto;
         }
 
-        .contact{
+        .heading-copy h2{
             width: 100%;
+            height: auto;
+            font-size: 30px;
+            white-space: nowrap;
         }
 
-        .btn-info{
-            width:100%;
-        }
         
 
          /*画面サイズ1079px以下のABOUTのCSS*/
@@ -486,14 +487,21 @@ text-align: left;
 
          /*画面サイズ1079px以下のNEWSのCSS*/
 
+        .news-copy{
+            width: 70%;
+        }
 
-        .news-box img{
-            width:20%;
+        .news-img{
+            width:30%;
+        }
+
+        .news-img img{
+            width:100%;
             height: auto;
         }
 
-        .news-copy{
-            width: 80%;
+        .news-copy p,h4,span,time{
+            width: 100%;
             height: auto;
         }
 
@@ -514,9 +522,7 @@ text-align: left;
         /*画面サイズ７６7ｐｘ以上に使った改行用CSS*/
 
      @media screen and (min-width:767px){
-        .br-pc{
-        display: block;
-         }
+       
          .br-sp{
             display:none;
         }
@@ -529,6 +535,11 @@ text-align: left;
 
         @media screen and (max-width:767px){
 
+            .wrap-secondary{
+                padding-left: 15px;
+                padding-right: 15px;
+             }
+
             /*７６7ｐｘ以下のヘッダーの部分*/
             
             header{
@@ -538,7 +549,7 @@ text-align: left;
 
             .header-inner{
                 margin: 0 15px;
-                max-width: 345px;
+                
                 margin-left: auto;
                 margin-right: auto;
                         }
@@ -555,32 +566,31 @@ text-align: left;
             /*７６7ｐｘ以下のヘディングの部分*/
         
             .heading img{
-                width:345px;
-                height:276px;
+                width:100%;
+                height:auto;
                 margin-bottom: 10px;
             }
         
             .heading-inner{
-                max-width: 345px;
                text-align: center;
                 flex-direction: column;
                 padding-top: 10px;
             }
 
             .heading-copy{
-                max-width: 345px;
                 margin-left: auto;
                 margin-right: auto;
             }
         
             .heading-copy h2{
+                width: 100%;
                 font-size: 28px;
                 text-align: center;
                 margin-bottom: 22px;
             }
 
            .heading-copy p{
-               max-width: 345px;
+               width:100%;
                font-size: 16px;
                text-align: center;
               padding-bottom: 20px;
@@ -591,7 +601,9 @@ text-align: left;
                 align-items: center;
             }
 
-
+            .contact{
+                margin-top: 20px;
+            }
             
            
 
@@ -618,7 +630,6 @@ text-align: left;
 
          /*７６８ｐｘ以下のservice about newsの横線の部分*/
         .border{
-            max-width: 345px;
             margin :0 auto;
             font-size: 28px;
             margin-bottom: 80px;
@@ -647,10 +658,22 @@ text-align: left;
 
         }
 
+        .intro-body{
+            margin-bottom: 50px;
+        }
+
+        .intro-body-tertiary{
+            margin-bottom: 0px;
+        }
+
+        .intro-img img{
+            width:100%;
+            height:auto;
+        }
+
        
         /*７６7ｐｘ以下のABOUTの部分*/
         .desc-box{
-            max-width: 345px;
             margin-left: auto;
             margin-right: auto;
             flex-direction: column;
@@ -718,13 +741,11 @@ text-align: left;
         /*７６7以下のNEWSの部分*/
 
         .news-inner{
-            max-width: 349px;
         }
 
         .news-box{
             display: flex;
   flex-direction: column;
-  max-width: 349px;
     margin-left: auto;
     margin-right: auto;
         }
@@ -739,6 +760,11 @@ text-align: left;
             margin-bottom: 24px;
         }
 
+        .news-img img{
+            width:100%;
+            height: auto;
+        }
+
 
         /*７６８ｐｘ以下のフッターの部分*/
 
@@ -751,7 +777,6 @@ text-align: left;
         .footer-inner {
             display: flex;
             flex-direction: column;
-            max-width: 168px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -780,39 +805,6 @@ text-align: left;
         }
     }
 
-     /*画面サイズ３２０ｐｘ以下に使ったCSS*/
+     
 
-    @media screen and (max-width:320px){
-
-        .wrap-secondary{
-           padding-left: 4.68vw;
-           padding-right: 4.68vw;
-        }
-
-      
-
-        .heading-inner img{
-            width:91vw;
-
-        }
-        
-        .heading p{
-           width:290px;
-           margin-left: auto;
-           margin-right: auto;
-        }
-        
-
-        .desc-box img{
-            width:91vw;
-        }
-
-        .desc-copy p {
-            width: 290px;
-            margin-left: auto;
-           margin-right: auto;
-        }
-
-        
-        
-       }
+   
